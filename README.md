@@ -162,6 +162,5 @@ $(document).ready(function () {
 
 ### Filling out Laserfiche forms variables
 
-The key to Laserfiche forms are variables. So you have to take the data from the Conversational Form and put them into Laserfiche to use throughout the process. This is accomplished with simple JQuery by grabbing the values set throughout the process(either by declaring variables or using the Conversational Form values), transferring them to the field values used by Laserfiche, then forcing the Submit action.
-
+The key to Laserfiche forms are variables. So you have to take the data from the Conversational Form and put them into Laserfiche to use throughout the process. This is accomplished with simple JQuery by grabbing the values set throughout the process(either by declaring variables or using the Conversational Form values), transferring them to the field values used by Laserfiche, then forcing the Submit action. Here is a simple example both ways.
 
