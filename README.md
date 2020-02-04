@@ -13,7 +13,21 @@ To view the Conversational Form documentation, please visit https://space10-comm
 ### Integration -- Getting Started and examples
 ---
 
-To Integrate Conversational Form, use the JQuery Instantiation bundled with a getScript promise call.
+To Integrate Conversational Form, use the JQuery Instantiation bundled with a getScript call.
 
+```
+$( document ).ready(function() {
+  
+  $.getScript( "https://cdn.jsdelivr.net/gh/space10-community/conversational-form@1.0.1/dist/conversational-form.min.js", function( data, textStatus, jqxhr ) {
+  
+    $("form").conversationalForm({
+        
+  	});
+    
+  });
+  
+});
+
+```
 
 
