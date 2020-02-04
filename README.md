@@ -53,3 +53,31 @@ Create a HTML button
 
 ```
 
+```
+$(document).ready(function () {
+
+    $.getScript("https://cdn.jsdelivr.net/gh/space10-community/conversational-form@1.0.1/dist/conversational-form.min.js", function (data, textStatus, jqxhr) {
+
+        var dispatcher = new cf.EventDispatcher();
+
+        dispatcher.addEventListener(cf.ControlElementEvents.SUBMIT_VALUE, function (event) {
+
+            var tagName = event.detail.referenceTag.name
+
+            if (tagName == "start") {
+                //THIS CAN BE ANY FUNCTION, LOOKUP EMPLOYEE, ETC
+                console.log("START EVENT FIRED")
+            }
+
+        }, false);
+
+        $("form").conversationalForm({
+            eventDispatcher: dispatcher
+        });
+
+    });
+
+});
+
+```
+
