@@ -30,5 +30,6 @@ $( document ).ready(function() {
 
 ```
 
-### Event Dispatchers and Call Backs
+### Event Dispatchers
+---
 
