@@ -30,10 +30,6 @@ $( document ).ready(function() {
 
 ```
 
-### Adding Tags with Javascript
-----
-
-
 ### Event Dispatchers
 ---
 https://space10-community.github.io/conversational-form/docs/1.0.0/events/
@@ -82,4 +78,87 @@ $(document).ready(function () {
 });
 
 ```
+
+### Adding Tags with Javascript
+----
+
+You can also use Javascript to add tags into the Conversational Form as opposed to using HTML, here is an example using SUBMIT_VALUE and functions. In the example below, the user hit's the start button from the SUBMIT_VALUE example. Then tags are generated to determine which way the user wants to turn. Upon selection, it is logged to console which way the user chose. You can see here how you can start building logic and conditionals for your bot using Javascript and adding tags.
+
+```
+$(document).ready(function () {
+
+    function determineUserDirection() {
+
+        var tags = [{
+            "tag": "fieldset",
+            "name": "determineUserDirection",
+            "type": "Radios",
+            "cf-questions": "Which way would you like to turn?",
+            "cf-input-placeholder": "Use me to filter",
+            "children": [{
+                    "tag": "input",
+                    "type": "radio",
+                    "name": "userDirectionSelection",
+                    "value": "turnLeft",
+                    "cf-label": "Turn Left"
+                },
+                {
+                    "tag": "input",
+                    "type": "radio",
+                    "name": "userDirectionSelection",
+                    "value": "turnRight",
+                    "cf-label": "Turn Right"
+                }
+            ]
+        }]
+
+        window.ConversationalForm.addTags(tags, true)
+    }
+
+    function userChoseRight() {
+        console.log("USER IS HERE--RIGHT")
+    }
+
+    function userChoseLeft() {
+        console.log("USER IS HERE--LEFT")
+    }
+
+    $.getScript("https://cdn.jsdelivr.net/gh/space10-community/conversational-form@1.0.1/dist/conversational-form.min.js", function (data, textStatus, jqxhr) {
+
+        var dispatcher = new cf.EventDispatcher();
+
+        dispatcher.addEventListener(cf.ControlElementEvents.SUBMIT_VALUE, function (event) {
+
+            var tagName = event.detail.referenceTag.name
+
+            //USER HITS START HTML BUTTON FROM PREVIOUS EXAMPLE TO GET THINGS GOING
+
+            if (tagName == "start") {
+                determineUserDirection()
+            }
+
+            if (tagName == "userDirectionSelection") {
+
+                var directionUserSelected = event.detail.value
+
+                if (directionUserSelected == "Turn Left") {
+                    userChoseLeft()
+                } else {
+                    userChoseRight()
+                }
+            }
+
+        }, false);
+
+        $("form").conversationalForm({
+            eventDispatcher: dispatcher
+        });
+
+    });
+
+});
+
+```
+
+
 
