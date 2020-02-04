@@ -10,7 +10,7 @@ SPACE10 is the company that built Conversational Form. to learn more about their
 
 To view the Conversational Form documentation, please visit https://space10-community.github.io/conversational-form/landingpage/
 
-### Integration -- Getting Started and examples
+### Integration -- Getting Started
 ---
 
 To Integrate Conversational Form, use the JQuery Instantiation bundled with a getScript call.
@@ -30,4 +30,5 @@ $( document ).ready(function() {
 
 ```
 
+### Event Dispatchers and Call Backs
 
