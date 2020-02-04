@@ -12,3 +12,8 @@ To view the Conversational Form documentation, please visit https://space10-comm
 
 ### Integration -- Getting Started and examples
 ---
+
+To Integrate Conversational Form, use the JQuery Instantiation bundled with a getScript promise call.
+
+
+
