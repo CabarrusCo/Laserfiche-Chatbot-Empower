@@ -82,7 +82,7 @@ $(document).ready(function () {
 ### Adding Tags with Javascript
 ----
 
-You can also use Javascript to add tags into the Conversational Form as opposed to using HTML, here is an example using SUBMIT_VALUE and functions. In the example below, the user hit's the start button from the SUBMIT_VALUE example. Then tags are generated to determine which way the user wants to turn. Upon selection, it is logged to console which way the user chose. You can see here how you can start building logic and conditionals for your bot using Javascript and adding tags.
+You can also use Javascript to add tags into the Conversational Form as opposed to using HTML, here is an example using SUBMIT_VALUE and functions. In the example below, the user hits the start button from the SUBMIT_VALUE example. Then tags are generated to determine which way the user wants to turn. Upon selection, it is logged to console which way the user chose. You can see here how you can start building logic and conditionals for your bot using Javascript and adding tags.
 
 ```
 $(document).ready(function () {
