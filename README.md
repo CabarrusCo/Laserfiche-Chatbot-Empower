@@ -33,3 +33,5 @@ $( document ).ready(function() {
 ### Event Dispatchers
 ---
 
+You can use event dispatcher to watch for changes to help with things like pulling autofill data out of Laserfiche. There are two main Events used by Conversational Form with Laserfiche Integration. These events are SUBMIT and SUBMIT_VALUE. SUBMIT is mainly used for text inputs where as SUBMIT_VALUE is mainly used for Selection events, such as the user clicks a radio button.
+
