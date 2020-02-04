@@ -2,10 +2,7 @@
 
 ### Conversational Form Laserfiche Forms integration
 
-### What is SPACE10?
----
-
-### What is Conversational Form?
+### What is Conversational Form and SPACE10?
 ---
 
 ### Integration -- Getting Started
