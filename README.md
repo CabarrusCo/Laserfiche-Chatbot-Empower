@@ -53,6 +53,8 @@ Create a HTML button
 
 ```
 
+Javascript for SUBMIT_VALUE
+
 ```
 $(document).ready(function () {
 
