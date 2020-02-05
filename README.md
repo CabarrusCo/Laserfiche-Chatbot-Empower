@@ -1,6 +1,17 @@
-# Laserfiche-Chatbot-Empower
+# Conversational Form Laserfiche Forms integration
 
-### Conversational Form Laserfiche Forms integration
+### About Cabarrus County
+---
+
+### About our team
+---
+Our team is the Business & Location Innovative Services(B.L.I.S) team for Cabarrus County. The team consists of five members as listed.
+
++ Joseph Battinelli - Team Supervisor
++ Mark McIntyre - Software Developer
++ Landon Patterson - Software Developer
++ Brittany Yoder - Software Developer
++ Marci Jones - Software Developer
 
 ### What is Conversational Form and SPACE10?
 ---
