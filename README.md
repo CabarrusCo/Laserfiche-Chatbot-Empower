@@ -281,6 +281,6 @@ In this example, Field3 is a Single Line variable in Conversational Form. Upon r
 
 ### flowCallBack vs Event Dispatchers
 
-The code in the repo uses flowCallBack, but the examples given in this readme use Event Dispatchers. When working with flows and conditionals, it is better to use Event Dispatchers. When working with data from autofill, especially large data sets, flowCallBack is better because the script CAN freeze if a lot of data is processed on an Event Dispatcher.
+The code in the repo uses flowCallBack, but the examples given in this readme use Event Dispatchers. When working with flows and conditionals, it is better to use Event Dispatchers. When working with data from autofill, especially large data sets, flowCallBack is better because the script CAN freeze if a lot of data is processed on an Event Dispatcher(such as loading every employee from a department), but a flowCallBack won't freeze and the script will continue on.
 
 
