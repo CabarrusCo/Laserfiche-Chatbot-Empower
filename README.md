@@ -277,4 +277,4 @@ $(document).ready(function () {
 });
 
 ```
-In this example, #Field3 is a Single Line variable in Conversational Form. Upon running the Submit Function, the code grabs the variable and puts it in Field3, making it then a Laserfiche Variable to be used anywhere in the Business Process that follows after submission.
+In this example, Field3 is a Single Line variable in Conversational Form. Upon running the Submit Function, the code grabs the variable and puts it in Field3, making it a Laserfiche Variable to be used anywhere in the Business Process that follows after submission.
