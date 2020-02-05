@@ -278,3 +278,9 @@ $(document).ready(function () {
 
 ```
 In this example, Field3 is a Single Line variable in Conversational Form. Upon running the Submit Function, the code grabs the variable and puts it in Field3, making it a Laserfiche Variable to be used anywhere in the Business Process that follows after submission.
+
+### flowCallBack vs Event Dispatchers
+
+The code in the repo uses flowCallBack, but the examples given in this readme use Event Dispatchers. When working with flows and conditionals, it is better to use Event Dispatchers. When working with data from autofill, especially large data sets, flowCallBack is better because the script CAN freeze if a lot of data is processed on an Event Dispatcher.
+
+
