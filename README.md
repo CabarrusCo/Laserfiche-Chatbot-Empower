@@ -2,10 +2,11 @@
 
 ### About Cabarrus County
 ---
+Cabarrus County is a county of North Carolina, situated in the south-central part of the state. Cabarrus County is part of the Charlotte-Concord-Gastonia, NC-SC Metropolitan Statistical Area and has a population of around 210,000. The County is known for its rich history in stock car racing and is home to Reed Gold Mine, the site of the first documented commerical gold find in the United States. 
 
 ### About our team
 ---
-Our team is the Business & Location Innovative Services(B.L.I.S) team for Cabarrus County. The team consists of five members as listed.
+Our team is the Business & Location Innovative Services (BLIS) team for Cabarrus County. The team consists of five members as listed below:
 
 + Joseph Battinelli - Team Supervisor
 + Mark McIntyre - Software Developer
@@ -13,15 +14,15 @@ Our team is the Business & Location Innovative Services(B.L.I.S) team for Cabarr
 + Brittany Yoder - Software Developer
 + Marci Jones - Software Developer
 
-Our team is responsible for Software Development and support for the [County](https://www.cabarruscounty.us/departments/information-technology). We are under direction of the CIO
+Our team is responsible for Software Development and support for the [County](https://www.cabarruscounty.us/departments/information-technology). We are under direction of the CIO. 
 
 ### What is Conversational Form and SPACE10?
 ---
-Conversational Form is a Javascript Library developed by SPACE10. It's let you turn any form into a flowing, Conversational experience using HTML5 and Javascript.
+Conversational Form is a Javascript Library developed by SPACE10. It allows you to turn any form into a flowing, conversational experience using HTML5 and Javascript.
 
-SPACE10 is the company that built Conversational Form. to learn more about their company and what they do, please visit https://space10.com/
+SPACE10 is the company that built Conversational Form. To learn more about their company and what they do, please visit https://space10.com/.
 
-To view the Conversational Form documentation, please visit https://space10-community.github.io/conversational-form/landingpage/
+To view the Conversational Form documentation, please visit https://space10-community.github.io/conversational-form/landingpage/.
 
 ### Integration -- Getting Started
 ---
@@ -47,7 +48,7 @@ $( document ).ready(function() {
 ---
 https://space10-community.github.io/conversational-form/docs/1.0.0/events/
 
-You can use event dispatcher to watch for changes to help with things like using Autofills in Laserfiche. There are two main Events used by Conversational Form with Laserfiche Integration. These events are SUBMIT and SUBMIT_VALUE. SUBMIT is mainly used for text inputs where as SUBMIT_VALUE is mainly used for Selection events, such as the user clicks a radio button. Below is an example of both.
+You can use event dispatcher to watch for changes to help with things like using Autofills in Laserfiche. There are two main events used by Conversational Form with Laserfiche Integration. These events are SUBMIT and SUBMIT_VALUE. SUBMIT is mainly used for text inputs where as SUBMIT_VALUE is mainly used for selection events, such as when the user clicks a radio button. Below is an example of both.
 
 SUBMIT_VALUE
 
@@ -95,7 +96,7 @@ $(document).ready(function () {
 ### Adding Tags with Javascript
 ----
 
-You can also use Javascript to add tags into the Conversational Form as opposed to using HTML, here is an example using SUBMIT_VALUE and functions. In the example below, the user hits the start button from the SUBMIT_VALUE example. Then tags are generated to determine which way the user wants to turn. Upon selection, it is logged to console which way the user chose. You can see here how you can start building logic and conditionals for your bot using Javascript and adding tags.
+You can also use Javascript to add tags into the Conversational Form as opposed to using HTML. Here is an example using SUBMIT_VALUE and functions. In the example below, the user hits the start button from the SUBMIT_VALUE example. Then tags are generated to determine which way the user wants to turn. Upon selection, it is logged to the console which the user chose. You can see here how you can start building logic and conditionals for your bot using Javascript and adding tags.
 
 ```
 $(document).ready(function () {
@@ -175,7 +176,7 @@ $(document).ready(function () {
 
 ### Filling out Laserfiche forms variables
 
-The key to Laserfiche forms are variables. So you have to take the data from the Conversational Form and put them into Laserfiche to use throughout the process. This is accomplished with simple JQuery by grabbing the values set throughout the process(either by declaring variables or using the Conversational Form values), transferring them to the field values used by Laserfiche, then forcing the Submit action. Here is a simple example.
+The key to Laserfiche forms is variables. So you have to take the data from the Conversational Form and put it into Laserfiche to use throughout the process. This is accomplished with simple JQuery by grabbing the values set throughout the process (either by declaring variables or using the Conversational Form values), transferring them to the field values used by Laserfiche, and then forcing the Submit action. Here is a simple example.
 
 ```
 $(document).ready(function () {
