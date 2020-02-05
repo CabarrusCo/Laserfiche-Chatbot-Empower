@@ -13,6 +13,8 @@ Our team is the Business & Location Innovative Services(B.L.I.S) team for Cabarr
 + Brittany Yoder - Software Developer
 + Marci Jones - Software Developer
 
+Our team is responsible for Software Development and support for the County.
+
 ### What is Conversational Form and SPACE10?
 ---
 Conversational Form is a Javascript Library developed by SPACE10. It's let you turn any form into a flowing, Conversational experience using HTML5 and Javascript.
