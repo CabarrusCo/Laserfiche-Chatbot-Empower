@@ -175,5 +175,105 @@ $(document).ready(function () {
 
 ### Filling out Laserfiche forms variables
 
-The key to Laserfiche forms are variables. So you have to take the data from the Conversational Form and put them into Laserfiche to use throughout the process. This is accomplished with simple JQuery by grabbing the values set throughout the process(either by declaring variables or using the Conversational Form values), transferring them to the field values used by Laserfiche, then forcing the Submit action. Here is a simple example both ways.
+The key to Laserfiche forms are variables. So you have to take the data from the Conversational Form and put them into Laserfiche to use throughout the process. This is accomplished with simple JQuery by grabbing the values set throughout the process(either by declaring variables or using the Conversational Form values), transferring them to the field values used by Laserfiche, then forcing the Submit action. Here is a simple example.
 
+```
+$(document).ready(function () {
+
+    var directionUserSelected = ""
+
+    function determineUserDirection() {
+
+        var tags = [{
+            "tag": "fieldset",
+            "name": "determineUserDirection",
+            "type": "Radios",
+            "cf-questions": "Which way would you like to turn?",
+            "cf-input-placeholder": "Use me to filter",
+            "children": [{
+                    "tag": "input",
+                    "type": "radio",
+                    "name": "userDirectionSelection",
+                    "value": "turnLeft",
+                    "cf-label": "Turn Left"
+                },
+                {
+                    "tag": "input",
+                    "type": "radio",
+                    "name": "userDirectionSelection",
+                    "value": "turnRight",
+                    "cf-label": "Turn Right"
+                }
+            ]
+        }]
+
+        window.ConversationalForm.addTags(tags, true)
+    }
+
+    function displayUserDirection() {
+        window.ConversationalForm.addRobotChatResponse("You selected " + directionUserSelected)
+        promptUserForSubmit()
+    }
+
+    function promptUserForSubmit() {
+
+        var tags = [{
+            "tag": "fieldset",
+            "name": "promptUserForSubmit",
+            "type": "Radios",
+            "cf-questions": "Please hit submit below to submit this form",
+            "cf-input-placeholder": "Use me to filter",
+            "children": [{
+                "tag": "input",
+                "type": "radio",
+                "name": "Submit",
+                "value": "Submit",
+                "cf-label": "Submit"
+            }]
+        }]
+
+        window.ConversationalForm.addTags(tags, true)
+    }
+
+    function submitThisForm() {
+        //FIELD THAT CONTAINS LASERFICHE VARIABLE
+        $('#Field3').val(directionUserSelected)
+        $('form').submit()
+    }
+
+    $.getScript("https://cdn.jsdelivr.net/gh/space10-community/conversational-form@1.0.1/dist/conversational-form.min.js", function (data, textStatus, jqxhr) {
+
+        var dispatcher = new cf.EventDispatcher();
+
+        dispatcher.addEventListener(cf.ControlElementEvents.SUBMIT_VALUE, function (event) {
+
+            var tagName = event.detail.referenceTag.name
+
+            //USER HITS START HTML BUTTON FROM PREVIOUS EXAMPLE TO GET THINGS GOING
+
+            if (tagName == "start") {
+                determineUserDirection()
+            }
+
+            if (tagName == "userDirectionSelection") {
+
+                directionUserSelected = event.detail.value
+                displayUserDirection()
+
+            }
+
+            if (tagName == "Submit") {
+                submitThisForm()
+            }
+
+        }, false);
+
+        $("form").conversationalForm({
+            eventDispatcher: dispatcher
+        });
+
+    });
+
+});
+
+```
