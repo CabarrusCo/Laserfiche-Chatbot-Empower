@@ -13,7 +13,7 @@ Our team is the Business & Location Innovative Services(B.L.I.S) team for Cabarr
 + Brittany Yoder - Software Developer
 + Marci Jones - Software Developer
 
-Our team is responsible for Software Development and support for the County.
+Our team is responsible for Software Development and support for the [County](https://www.cabarruscounty.us/departments/information-technology). We are under direction of the CIO
 
 ### What is Conversational Form and SPACE10?
 ---
