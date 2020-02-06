@@ -20,7 +20,7 @@ Our team is responsible for Software Development and support for the [County](ht
 ---
 Conversational Form is a Javascript Library developed by SPACE10. It allows you to turn any form into a flowing, conversational experience using HTML5 and Javascript.
 
-SPACE10 is the company that built Conversational Form. To learn more about their company and what they do, please visit https://space10.com/.
+SPACE10 is a research and design lab located in Denmark. They build Conversational Form. To learn more about their research and design lab and what they do, please visit https://space10.com/.
 
 To view the Conversational Form documentation, please visit https://space10-community.github.io/conversational-form/landingpage/.
 
