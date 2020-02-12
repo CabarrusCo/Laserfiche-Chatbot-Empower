@@ -48,9 +48,7 @@ $( document ).ready(function() {
 ---
 https://space10-community.github.io/conversational-form/docs/1.0.0/events/
 
-You can use event dispatcher to watch for changes to help with things like using Autofills in Laserfiche. There are two main events used by Conversational Form with Laserfiche Integration. These events are SUBMIT and SUBMIT_VALUE. SUBMIT is mainly used for text inputs where as SUBMIT_VALUE is mainly used for selection events, such as when the user clicks a radio button. Below is an example of both.
-
-SUBMIT_VALUE
+You can use event dispatcher to watch for changes to help with things like using Autofills in Laserfiche. There are two main events used by Conversational Form with Laserfiche Integration. These events are SUBMIT and SUBMIT_VALUE. SUBMIT is mainly used for text inputs where as SUBMIT_VALUE is mainly used for selection events, such as when the user clicks a radio button. Below is an example of SUBMIT_VALUE.
 
 Create a HTML button
 
