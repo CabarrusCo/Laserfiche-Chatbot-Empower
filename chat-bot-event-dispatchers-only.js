@@ -1,5 +1,5 @@
 //Shows How To Accomplish everything in CHAT-BOT.js using EVENT DISPATCHERS only, which may be a cleaner option for some users
-//This example doesn't submit anything, just looks an employee number based on name selection, for demonstration purposes only
+//This example doesn't submit anything, just looks up an employee number based on name selection, for demonstration purposes only
 
 $(document).ready(function () {
 
